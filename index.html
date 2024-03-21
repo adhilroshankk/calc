@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+
+    <div class="frstbody">
+        <div class="input">
+            <input class="answer" type="text" id="result" placeholder="0">
+        </div>
+        <div class="firstbtn">
+            <button  onclick="allClear()" class="oper">C</button>
+            <button  onclick="percent()" class="oper">%</button>
+            <button  onclick="remove()" class="oper">E</button>
+            <button  onclick="displayData('+')" class="oper">+</button>
+        </div>
+        <div class="btn2">
+            <button onclick="displayData(7)">7</button>
+            <button onclick="displayData(8)">8</button>
+            <button onclick="displayData(9)">9</button>
+            <button  onclick="displayData('/')" class="oper">/</button>
+        </div>
+        <div class="btn3">
+            <button onclick="displayData(4)">4</button>
+            <button onclick="displayData(5)">5</button>
+            <button onclick="displayData(6)">6</button>
+            <button onclick="displayData('-')" class="oper">-</button>
+        </div>
+
+        <div class="btn4">
+            <button onclick="displayData(1)">1</button>
+            <button onclick="displayData(2)">2</button>
+            <button onclick="displayData(3)">3</button>
+            <button  onclick="displayData('*')" class="oper">*</button>
+        </div>
+
+        <div class="btn5">
+            <button onclick="displayData(0)">0</button>
+            <button onclick="displayData('.')">.</button>
+            <button onclick="findOut()" class="equal">=</button>
+        </div>
+
+
+    </div>
+
+</body>
+<script src="calc.js"></script>
+
+</html>
